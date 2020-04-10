@@ -1,0 +1,4 @@
+- You **MUST** ask before commiting at the master branch.
+- **MUST mention** if you are going to use the code **publicly**.
+- **No changes are allowed** on the main code if is going to be used for **lucrative causes**.
+- You must **privately contact me** if you are going to pull a request. If you don't contact me, **it will be deleted and no more contribution from your part is going to be allowed until you contact me**.
