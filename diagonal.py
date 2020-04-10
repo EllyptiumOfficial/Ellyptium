@@ -1,26 +1,25 @@
+def diagonal(array, startSide = "ul", reverse=False):
 
-def diagonal(array, side_1 = "l", side_2 = "r", reverse=False):
+    if type(array) != list:
+        raise TypeError(f"You must enter a list, not a {type(array)}")
+
+    try:
+        l = len(array)
+    
+        for a in array:
+            if l != len(a):
+                raise IndexError("Square must be n x n")
+
+    except TypeError:
+        return print("TypeError: The list must have more than one element")
+
     if reverse == True:
         for i, a in enumerate(array):
             array[i] = a[::-1]
         array = array[::-1]
+    
+    if startSide != "l" and startSide != "r":
+        raise ValueError("startSide parameter must be between quotes and be 'r' or 'l'")
 
-    if side_1 == "l":
-        side_1 = 0
-    
-    elif side_1 == "r":
-        side_1 = -1
-    
-    else:
-        raise Exception("SideError - Sides must be between quotes and be 'r' or 'l'")
-    
-    if side_2 == "l":
-        side_2 = 0
-    
-    elif side_2 == "r":
-        side_2 = -1
-    
-
-
-
-diagonal([[1, 2, 3], [4, 5, 6], [7, 8, 9]],"nope",  reverse=True)
+    if startSide == "l":
+        pass
