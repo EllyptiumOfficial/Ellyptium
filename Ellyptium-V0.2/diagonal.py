@@ -1,6 +1,7 @@
 import operator
 from functools import reduce
 from math import prod
+from errors import launch_error
 
 def diagonal(array, startSide = "l", mode = "ret", reverse=False):
 
@@ -8,39 +9,25 @@ def diagonal(array, startSide = "l", mode = "ret", reverse=False):
 
     if mode != "ret":
         if mode not in modes:
-            try:
-                raise Exception
-            except Exception:
-                print(f"{mode} is not a valid mode")
-                return print("Avaliable modes are:\n\tSimple return: 'ret'\n\tSumatory: 'sum'\n\tSubstraction: 'sub'\n\tMultiply: 'mult'")
+            return launch_error("Avaliable modes are:\n\tSimple return: 'ret'\n\tSumatory: 'sum'\n\tSubstraction: 'sub'\n\tMultiply: 'mult'")
 
 
 
     if type(array) != list:
-        try:
-            raise Exception
-        except Exception:
-            return print(f"You must enter a list, not a {type(array)}")
+        return launch_error(f"You must enter a list, not a {type(array)}")
 
     try:
         l = len(array)
     
         for a in array:
             if l != len(a):
-                try:
-                    raise Exception
-                except Exception:
-                    return print("Square must be n x n")
+                return launch_error("Square must be n x n")
 
-    except TypeError:
+    except IndexError:
         return print("The list must have more than one element")    
     
     if startSide != "l" and startSide != "r":
-        try:
-            raise Exception
-
-        except Exception:
-            return print(f"Valid starting sides are 'r' and 'l', not '{startSide}'")
+        return launch_error(f"Valid starting sides are 'r' and 'l', not '{startSide}'")
 
 
     if reverse == True:
