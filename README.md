@@ -1,38 +1,14 @@
+# **Hello everyone!**
 
-**From now on, the function diagonal is done.**
+**Welcome to my GitHub account and project**
 
-**Ellyptium adds its first function: diagonal.**
+This library is not now available at PYPI, but it will...
 
-This function allows you to return the diagonal trace from a N x N square. It also has some built-in formatted returns, as the addition of all, the subtraction of all and the product of all. You can also return it reversed.
+If you want to learn what I have done for now, go to my wiki and learn how to use every module!
 
-The syntax is:
-`diagonal(list, startSide, mode, reversed)`.
+If you want to contribute, read the CONTRIBUTING file at the 'github stuff' folder.
 
-**PARAMETERS**
+Please, test this package and, if you like it, do not hesitate about contacting me to send suggestions!!
 
-**list**
-
-list must be an NxN list of lists, as can be:
-`[[1, 2, 3], [4, 5, 6], [7, 8, 9]]`.
-
-**startSide**
-
-startSide must be `'r'` or `'l'` depending if you want the trace from right to left or left to right, respectively.
-By default, the value is `'l'`.
-
-**mode**
-
-There are 4 different modes:
-
-- `'ret'`: Is the default mode. It returns a list with the diagonal trace. Using the list example variable, the return result is `[1, 5, 9]`.
-
-- `'sum'`: This mode returns the sum of the values of the diagonal trace. Using the last example, return result is `15`.
-
-- `'sub'`: This mode returns the substraction of the values of the diagonal trace. Using the last example, return result is `-13`.
-
-- `'mult'`: This last mode returns the product of all values of the diagonal trace. Using the last example, return result is `45`.
-
-**reversed**
-
-This parameter allows you to do the trace from down to up instead of up to down.
-If you want to do this, you must turn `True` the `reversed` value. It's `False` from default.
+e-mail: fosanzgames@gmail.com
+IG: @pythonstudent
