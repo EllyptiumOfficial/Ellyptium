@@ -1,4 +1,16 @@
-from errors import launch_error
+from os import sys
+def launch_error(*args):
+    try:
+        raise Exception
+
+    except Exception:
+        lines = ""
+        for a in args:
+            lines += a
+            lines += "\n"
+        
+        print(lines)
+        sys.exit()
 
 def build_triangle(num):
     
@@ -21,7 +33,8 @@ def build_triangle(num):
 
 def pascal_triangle(num, mode="default"):
 
-    launch_error("ERROR: YO MEN, what r u doing? The triangle must be positive!","Your input: {}".format(num))
+    if num <= 0:
+        launch_error("ERROR: YO MEN, what r u doing? The triangle must be positive!","Your input: {}".format(num))
 
     lista = [1]
 

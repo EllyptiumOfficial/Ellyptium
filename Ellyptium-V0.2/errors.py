@@ -1,3 +1,4 @@
+from os import sys
 def launch_error(*args):
     try:
         raise Exception
@@ -8,4 +9,5 @@ def launch_error(*args):
             lines += a
             lines += "\n"
         
-        return lines
+        print(lines)
+        sys.exit()
