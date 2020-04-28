@@ -11,4 +11,4 @@ If you want to contribute, read the CONTRIBUTING file at the 'github stuff' fold
 Please, test this package and, if you like it, do not hesitate about contacting me to send suggestions!!
 
 e-mail: fosanzgames@gmail.com
-IG: @pythonstudent
+IG: @ellyptiumofficial
